@@ -39,3 +39,13 @@
 ## 交付
 
 index.html（＋资源如用户要求分离）＋ 一段风格说明（方向/token/为什么适合该产品）。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、转化背景权威数据（Baymard Institute，长期大样本研究）：购物车平均放弃率 70.22%——着陆页的第一使命是消解犹豫：社会证明、明确 CTA、风险逆转（退款/保障）置于首屏。
+二、性能即转化：Core Web Vitals 官方阈值（LCP ≤ 2.5s / INP ≤ 200ms / CLS ≤ 0.1）是硬门禁；经典量化研究 Deloitte《Milliseconds Make Millions》（2020）：交互延迟每降 0.1s，零售转化约 +8%（引用时注明为 2020 年研究，条件适用性自行评估）。
+三、移动优先不是选项：移动流量占主导的结论在 Google 多年研究中稳定成立——375px 断点即主战场。
+
+## 来源
+- [Baymard: Cart Abandonment Rate Statistics](https://baymard.com/lists/cart-abandonment-rate)（权威研究机构，2026-11-01 联网核验）
+- [web.dev Core Web Vitals](https://web.dev/articles/vitals)（Google 官方，2026-11-01 联网核验）

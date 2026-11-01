@@ -40,3 +40,13 @@
 ## P5 逃逸转化（人肉发现缺陷后 24h 内）
 
 漏网缺陷 → 复现步骤 → 新断言（带出生原因）→ 入库并计数。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、E2E 断言哲学（Playwright 官方最佳实践）：面向用户行为断言（getByRole/getByText + web-first 断言自动重试），禁止依赖实现细节的选择器——「测行为不测实现」与 Google Testing Blog 的 change-detector 反模式警示一致。
+二、测试分层共识：Kent C. Dodds 的测试奖杯（Testing Trophy，integration 为重心、E2E 少而精）仍是社区主流共识——与验收工程的「独立复核通道」互补：奖杯管回归，P0-P5 管单次交付。
+三、AI 产物验收：evals 工程化（离线评测集 + 在线监控）已成为 agent 交付标配——把 P3 不变量挖掘的产物沉淀为可重放评测集。
+
+## 来源
+- [Playwright Best Practices](https://playwright.dev/docs/best-practices)（官方，2026-11-01 联网核验）
+- [Kent C. Dodds：测试奖杯概念](https://testingjavascript.com/)（作者站点，2026-11-01 联网核验）

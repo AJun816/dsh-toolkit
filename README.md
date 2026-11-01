@@ -38,6 +38,8 @@ DeepSeek Harness 工具箱插件：**自动提示词优化器**（学习 draft-b
 
 技能对模型与用户均可见（modelInvocable/userInvocable），模型按描述自动激活；技能正文在插件 `skills/` 目录，按需加载（渐进披露）。
 
+每个技能正文末尾带「业界基准（2026-11-01 联网核验）」与「来源」两节：版本基线（React 19.3 / Vite 7 / PostgreSQL 18 / OpenAPI 3.2 / MCP 2025-11-25）、官方阈值（Core Web Vitals、WCAG 2.2 对比度）、权威研究数据（Baymard 70.22%）与官方工程范式（Anthropic Explore→Plan→Code、Agent Skills 开放标准、AGENTS.md 采纳面）均逐一核验过官方原文并附 URL——技能本身遵守 integration-auditor 的「联网查漏补缺」纪律，过期可按来源链接复验更新。
+
 ## 能力三：人类命令（ctx.commands）
 
 ```

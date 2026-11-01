@@ -38,3 +38,14 @@
 ## 联网校验
 
 依赖升级与安全公告用 web_search 核对（CVE/维护状态/破坏性变更）；第三方集成先 live 探针（openapi/tools list），原始 schema 落盘 contracts/ 再对拍。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、API 契约基线：OpenAPI 3.2 是当前规范版本（swagger.io/specification）——API 设计以 OpenAPI 文档为单一事实源，契约测试对拍它。
+二、数据库基线：PostgreSQL 18 为当前主版本（postgresql.org）；SQLite/libsql 在边缘与嵌入场景的复兴是官方认可的路线。
+三、可观测性基线：OpenTelemetry 规范 1.x 已 Stable（opentelemetry.io/status）——traces/metrics/logs 三信号默认走 OTel 语义约定，结构化 JSON 日志为事实标准。
+
+## 来源
+- [OpenAPI Specification v3.2](https://swagger.io/specification/)（官方，2026-11-01 联网核验）
+- [PostgreSQL Release Notes](https://www.postgresql.org/docs/release/)（官方，2026-11-01 联网核验）
+- [OpenTelemetry Status](https://opentelemetry.io/status/)（官方，2026-11-01 联网核验）

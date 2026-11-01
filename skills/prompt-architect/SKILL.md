@@ -50,3 +50,13 @@ DoD（完成的定义——开工前写好，交付前逐条自检）：
 ## 输出规范
 
 改写产物一律纯文本（可复制进任意 AI 输入框，禁 Markdown 语法）；段题用中文序号或六段引导（角色：/目标：/背景：/要求：/约束：/输出：）。用户原始意图与事实一字不丢，缺的要素留占位问题而不是编造。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、Agent 工作流官方范式（Anthropic Claude Code Best Practices）：「Explore → Plan → Code」——先读代码/材料、再定计划、经确认后动手；这与中国知识库的「先检后答 + DoD 前置」完全同构，跨语言任务委托默认嵌入。
+二、Skill/提示词资产化官方规范（Anthropic Agent Skills，开放标准）：SKILL.md 以 name + description 元数据声明触发条件，正文渐进披露（progressive disclosure）——写可复用提示词模板时按此结构：目录级一句话触发条件 + 正文分层（先核心流程、细节按需加载）。
+三、验证反模式（官方推荐）：重要产出用「新起的模型/子代理尝试反驳结论」做交叉验证，避免同一上下文自我确认。
+
+## 来源
+- [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)（官方，2026-11-01 联网核验）
+- [Anthropic Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)（官方开放标准，2026-11-01 联网核验）

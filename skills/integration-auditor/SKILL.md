@@ -28,3 +28,12 @@ Step 5 保全 diff：旧版关键信息清单 → 新版逐项核对（保留/�
 ## 联网纪律
 
 用 web_fetch 直接抓官方文档原文核对；文档不可信是纪律——一切以 live 探针为准；推断必须源码验证（「13 个工具」实为 42 个的教训：清单虚标不可信）。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、MCP 是外部能力接入的主战场：规范最新修订 2025-11-25（modelcontextprotocol.io/specification）——审计 MCP 集成时以 live tools/list 对拍规范修订号与 schema，二手文档（含模型记忆）一律不作为基准。
+二、API 契约审计基线：OpenAPI 3.2（swagger.io）——三源对拍时 live 探针拉 openapi.json，与其声明的 OpenAPI 版本与 schema 逐项核对。
+
+## 来源
+- [MCP Specification](https://modelcontextprotocol.io/specification/latest)（官方开放标准，2026-11-01 联网核验）
+- [OpenAPI v3.2](https://swagger.io/specification/)（官方，2026-11-01 联网核验）

@@ -51,3 +51,13 @@ has_enough_context: false
 ## 产出契约
 
 最终报告为 Markdown 文件（放工作区）；用 present 声明交付；附完整来源列表与置信度评估。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、交叉验证官方模式（Anthropic Claude Code 实践）：综合阶段让一个「新鲜上下文」的模型尝试反驳已得结论（fresh model tries to refute）——比同一会话自查更能暴露幻觉；落实到本技能：SYNTHESIZE 前把关键结论列表交给独立 subagent 挑错。
+二、探索优先：动手写报告前先探索（Explore first, then plan）——与四阶段流程的 CLARIFY→PLAN 一致，官方与知识库方法论在此汇合。
+三、引用纪律沿用 deerflow 双保险（引用前置 + URL 只出自搜索结果），与 OpenAI/Gemini Deep Research 公开描述的规划-检索-综合循环同构。
+
+## 来源
+- [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)（官方，2026-11-01 联网核验）
+- [Anthropic: Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)（官方，2026-11-01 联网核验）

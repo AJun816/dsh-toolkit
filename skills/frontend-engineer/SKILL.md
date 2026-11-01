@@ -38,3 +38,14 @@
 ## 输出物
 
 可运行代码＋变更说明（为什么这样分层/选型）＋自测清单（跑过的命令与结果）。涉及架构决策时顺手产出 Decision Memo。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、版本基线：React 19.3（react.dev/blog）、Vite 7（vite.dev）、TypeScript 5.x（strict 官方推荐）——新项目默认从这些主版本起步。
+二、Core Web Vitals 官方阈值（web.dev）：LCP ≤ 2.5s、INP ≤ 200ms（官方原文 "Good INP values are 200 milliseconds"，INP 已取代 FID）、CLS ≤ 0.1；目标线应写进性能预算与 CI 门禁（Lighthouse 断言）。
+三、E2E 选择器哲学（Playwright 官方）：面向用户可感知的定位（getByRole/getByText）优先，禁依赖实现细节的 CSS/XPath 选择器；web-first 断言（expect(locator).toBeVisible 自动重试）代替 sleep。
+
+## 来源
+- [web.dev Core Web Vitals](https://web.dev/articles/vitals)、[INP](https://web.dev/articles/inp)（Google 官方，2026-11-01 联网核验）
+- [react.dev/blog](https://react.dev/blog)、[vite.dev](https://vite.dev/guide/)（官方，2026-11-01 联网核验）
+- [Playwright Best Practices](https://playwright.dev/docs/best-practices)（官方，2026-11-01 联网核验）

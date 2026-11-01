@@ -38,3 +38,13 @@ UI 设计、视觉走查、设计系统、或用户要求「好看/高级感/有
 ## 交付
 
 设计 token 文件＋关键屏描述（层级结构/焦点/交互态）＋与前端工程师技能配合落地；涉及品牌色给 hex 值。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、可访问性法规基线：WCAG 2.2 为 W3C 正式推荐标准（2023 起）——正文对比度 ≥ 4.5:1、大字 ≥ 3:1 是硬要求；欧洲无障碍法案（EAA）已进入执行期，商业项目按 WCAG 2.2 AA 交付是合规底线而非加分项。
+二、设计令牌：Design Tokens Format 为 W3C 社区组规范（DTCG）——token 文件按「核心令牌（色阶/间距）→ 语义令牌（surface/danger）」两层组织，与主流系统（Material 3、Fluent）的 token 结构对齐。
+三、平台参照：Material 3（m3.material.io）与 Apple HIG 是双端权威参照；做跨端产品时以目标平台 HIG 为准，不混用。
+
+## 来源
+- [WCAG 2.2 W3C Recommendation](https://www.w3.org/TR/WCAG22/)（W3C 官方，2026-11-01 联网核验）
+- [Material Design 3](https://m3.material.io/)（Google 官方，2026-11-01 联网核验）

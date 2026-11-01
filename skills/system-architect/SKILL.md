@@ -28,3 +28,14 @@ Step 0 澄清（业务模糊先问五问：规模与团队/外部依赖/寿命�
 ## 输出物
 
 架构决策记录（每项选型一份 Decision Memo：候选/依据/反例/复评时间点）＋复用台账＋四层防线清单＋成本红线（预算进状态机字段，不是口头约定）。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、AI 时代架构事实：MCP（Model Context Protocol）是开放标准，规范最新修订 2025-11-25（modelcontextprotocol.io/specification）——外部工具/数据接入默认评估 MCP 优先于私有协议；AGENTS.md 已成跨工具事实标准（采纳方含 Google、Cursor、Windsurf、Semgrep、Kilo Code 等，agents.md）——仓库级 agent 立法文件用 AGENTS.md 命名可获得跨工具兼容。
+二、复杂度阶梯官方共识（Anthropic Building Effective Agents）：从增强型 LLM（检索+工具）起步，先组合式 workflow（代码编排、可预测），仅当需要模型自主决策时才上 agent——能用 workflow 解决的不要上 agent。
+三、不可逆与资金动作的治理分级（本技能七级铁律）与业界 agent 安全共识一致：资金/不可逆动作留在服务端硬闸门。
+
+## 来源
+- [MCP Specification](https://modelcontextprotocol.io/specification/latest)（官方开放标准，2026-11-01 联网核验）
+- [AGENTS.md](https://agents.md/)（跨工具标准，2026-11-01 联网核验）
+- [Anthropic: Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)（官方工程博客，2026-11-01 联网核验）

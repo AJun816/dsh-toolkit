@@ -21,5 +21,16 @@
     "skills",
     "coding-agent"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJun816/dsh-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AJun816/dsh-toolkit/issues"
+  },
+  "homepage": "https://github.com/AJun816/dsh-toolkit#readme",
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  }
 }

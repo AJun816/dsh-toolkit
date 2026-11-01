@@ -42,3 +42,12 @@
 ## 交付
 
 可运行骨架＋三件套＋verify 一键命令＋演示脚本；用 present 声明交付物。
+
+## 业界基准（2026-11-01 联网核验）
+
+一、立法三件套的事实标准：AGENTS.md 已成跨工具标准（采纳方含 Google、Cursor、Windsurf、Semgrep、Kilo Code 等，agents.md）——新仓库用 AGENTS.md 命名 agent 立法文件，可被主流编码工具原生识别；MCP（规范修订 2025-11-25）是外部工具接入默认评估项。
+二、复杂度起步官方共识（Anthropic）：从增强型 LLM/简单组合 workflow 起步，验证价值后再上自主 agent——walking skeleton 同理：先端到端最小通路，不预建 agent 编排。
+
+## 来源
+- [AGENTS.md](https://agents.md/)（跨工具标准，2026-11-01 联网核验）
+- [Anthropic: Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)（官方，2026-11-01 联网核验）
