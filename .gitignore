@@ -1,0 +1,4 @@
+.dsh-project-memory/
+prompts.log
+node_modules/
+.DS_Store

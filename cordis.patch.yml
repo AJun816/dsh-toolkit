@@ -1,0 +1,20 @@
+# dsh-toolkit bundle patch
+# 提示词优化器（agent/pre-step 钩子）+ dsh-toolkit 技能集（ctx.skills provider）
+# + /ptk /po /spec 人类命令（ctx.commands）。
+# 所有扩展点均通过 ctx.get() 可选获取：任一服务在未来的 DSH 中缺失时，
+# 对应能力自动停用，插件本身与其余能力不受影响。
+- insert:
+    - id: dsh-toolkit
+      name: dsh-toolkit
+      config:
+        promptOptimizer:
+          mode: heuristic # off | heuristic | llm
+          applyTo: thin,kickoff,external,important,continue
+          escapeMarker: "!!raw"
+          forceMarker: "!!po"
+          keepRichUnchanged: true
+          auditLog: true
+        skills:
+          enabled: true
+        commands:
+          enabled: true
