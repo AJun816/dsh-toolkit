@@ -2,6 +2,9 @@
 
 判据的生产流水线：起草归提示词，执法归门禁。源自 draft-blog 验收自进化提示词 v1。
 
+> 基线失败：验收标准是交付后的口述形容词（「基本可用」），执行者自己判自己的卷，测试改动大于业务改动无人拦。
+> 不启用：代码实现本身（frontend/backend-engineer）；研究结论核验（research-mode 的 fresh-model 反驳）。
+
 ## 何时介入
 
 任务收尾验收、写 DoD/验收标准、做红队对抗、评测 agent 产出、人肉发现漏网缺陷后。
@@ -47,6 +50,6 @@
 二、测试分层共识：Kent C. Dodds 的测试奖杯（Testing Trophy，integration 为重心、E2E 少而精）仍是社区主流共识——与验收工程的「独立复核通道」互补：奖杯管回归，P0-P5 管单次交付。
 三、AI 产物验收：evals 工程化（离线评测集 + 在线监控）已成为 agent 交付标配——把 P3 不变量挖掘的产物沉淀为可重放评测集。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [Playwright Best Practices](https://playwright.dev/docs/best-practices)（官方，2026-11-01 联网核验）
 - [Kent C. Dodds：测试奖杯概念](https://testingjavascript.com/)（作者站点，2026-11-01 联网核验）

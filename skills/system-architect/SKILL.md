@@ -2,6 +2,9 @@
 
 业务驱动的架构设计。方法论源自 draft-blog 架构终极提示词 v2（DDD＋整洁架构＋约束式工程＋AG-UI 治理）。
 
+> 基线失败：技术栈照抄上一项目或当下流行，架构决策答不出服务哪个业务目标，约束停留在口头没有可执行闸门。
+> 不启用：单文件脚本与原型（直接写）；已定架构下的日常编码（frontend/backend-engineer）；新仓库从零立法（project-init 主流程，架构原则按需引用本技能）。
+
 ## 何时介入
 
 架构设计、技术选型、限界上下文划分、架构约束立法、人机协作（agent）系统设计。
@@ -35,7 +38,7 @@ Step 0 澄清（业务模糊先问五问：规模与团队/外部依赖/寿命�
 二、复杂度阶梯官方共识（Anthropic Building Effective Agents）：从增强型 LLM（检索+工具）起步，先组合式 workflow（代码编排、可预测），仅当需要模型自主决策时才上 agent——能用 workflow 解决的不要上 agent。
 三、不可逆与资金动作的治理分级（本技能七级铁律）与业界 agent 安全共识一致：资金/不可逆动作留在服务端硬闸门。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [MCP Specification](https://modelcontextprotocol.io/specification/latest)（官方开放标准，2026-11-01 联网核验）
 - [AGENTS.md](https://agents.md/)（跨工具标准，2026-11-01 联网核验）
 - [Anthropic: Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)（官方工程博客，2026-11-01 联网核验）

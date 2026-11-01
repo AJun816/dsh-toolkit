@@ -1,7 +1,7 @@
 {
   "name": "dsh-toolkit",
-  "version": "0.1.0",
-  "description": "DeepSeek Harness toolkit plugin: auto prompt optimizer learned from the draft-blog knowledge-base templates + a curated skill suite for online coding (frontend / backend / UI design / system architecture / acceptance / research). Zero runtime dependencies, fully defensive against DSH upgrades.",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness toolkit plugin: auto prompt optimizer learned from the draft-blog knowledge-base templates + a curated skill suite for online coding (frontend / backend / UI design / system architecture / acceptance / research / skill authoring). Zero runtime dependencies, fully defensive against DSH upgrades.",
   "type": "module",
   "main": "lib/index.js",
   "private": true,

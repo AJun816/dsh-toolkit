@@ -2,6 +2,9 @@
 
 把模糊请求升级为高质量任务委托。方法论蒸馏自 draft-blog 知识库（3272 条真实对话的反模式考古），全部规则有数据出处。
 
+> 基线失败：长任务的全部期望押在一句「帮我做个 X」上，四要素靠 AI 猜，验收标准交付后才口述——每条标准多付一轮返工。
+> 不启用：十秒可答的日常问答；多源调查研究（先走 research-mode）；验收判据的生产（acceptance-engineer）。
+
 ## 何时介入
 
 用户要写复杂任务委托、优化提示词、拆解模糊需求，或一条消息将开启长任务时。
@@ -57,6 +60,6 @@ DoD（完成的定义——开工前写好，交付前逐条自检）：
 二、Skill/提示词资产化官方规范（Anthropic Agent Skills，开放标准）：SKILL.md 以 name + description 元数据声明触发条件，正文渐进披露（progressive disclosure）——写可复用提示词模板时按此结构：目录级一句话触发条件 + 正文分层（先核心流程、细节按需加载）。
 三、验证反模式（官方推荐）：重要产出用「新起的模型/子代理尝试反驳结论」做交叉验证，避免同一上下文自我确认。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)（官方，2026-11-01 联网核验）
 - [Anthropic Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)（官方开放标准，2026-11-01 联网核验）

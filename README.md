@@ -1,6 +1,6 @@
 # dsh-toolkit
 
-DeepSeek Harness 工具箱插件：**自动提示词优化器**（学习 draft-blog 知识库模版）＋ **联网编码领域技能集**（前端/后端/UI 设计/系统架构/验收/研究等 10 项）＋ **人类命令**（/ptk /po /spec）。
+DeepSeek Harness 工具箱插件：**自动提示词优化器**（学习 draft-blog 知识库模版）＋ **联网编码领域技能集**（前端/后端/UI 设计/系统架构/验收/研究/技能编写等 11 项）＋ **人类命令**（/ptk /po /spec）。
 
 零 npm 依赖；所有扩展点能力检测＋防御式包裹——DSH 升级移除任一依赖服务时，对应能力自动停用，插件与其余能力不受影响，宿主行为与未安装时完全一致。
 
@@ -35,10 +35,11 @@ DeepSeek Harness 工具箱插件：**自动提示词优化器**（学习 draft-b
 | research-mode | 深度研究 | deerflow 研究模式（结构化计划回填＋并行分批＋引用纪律） |
 | landing-page | 着陆页生成 | deerflow frontend-design（先研究后生成/风格字典/反 slop） |
 | project-init | 项目快起 | draft-blog Agent 快起 Init v2（walking skeleton＋立法三件套） |
+| skill-author | 技能编写 | 本机三样本逆向（ui-ux-pro-max 数据驱动 / copilotkit-agui 渐进披露 / ux-audit 契约式）＋Anthropic Agent Skills |
 
 技能对模型与用户均可见（modelInvocable/userInvocable），模型按描述自动激活；技能正文在插件 `skills/` 目录，按需加载（渐进披露）。
 
-每个技能正文末尾带「业界基准（2026-11-01 联网核验）」与「来源」两节：版本基线（React 19.3 / Vite 7 / PostgreSQL 18 / OpenAPI 3.2 / MCP 2025-11-25）、官方阈值（Core Web Vitals、WCAG 2.2 对比度）、权威研究数据（Baymard 70.22%）与官方工程范式（Anthropic Explore→Plan→Code、Agent Skills 开放标准、AGENTS.md 采纳面）均逐一核验过官方原文并附 URL——技能本身遵守 integration-auditor 的「联网查漏补缺」纪律，过期可按来源链接复验更新。
+每个技能正文末尾带「业界基准（2026-11-01 联网核验）」与「来源」两节：版本基线（React 19.3 / Vite 7 / PostgreSQL 18 / OpenAPI 3.2 / MCP 2025-11-25）、官方阈值（Core Web Vitals、WCAG 2.2 对比度）、权威研究数据（Baymard 70.22%）与官方工程范式（Anthropic Explore→Plan→Code、Agent Skills 开放标准、AGENTS.md 采纳面）均逐一核验过官方原文并附 URL——技能本身遵守 integration-auditor 的「联网查漏补缺」纪律，来源节带保鲜 SLA（90 天，超期数字先重验再引用）。每技能开篇带「基线失败」声明与「不启用」负向路由（借鉴 ux-audit / copilotkit-agui 样本），兄弟技能边界显式交接。
 
 ## 能力三：人类命令（ctx.commands）
 
@@ -100,7 +101,7 @@ dsh --profile web --dump-config   # 验证出现 "# == dsh-toolkit" 层
 ## 测试
 
 ```sh
-npm test    # node --test test/unit.test.mjs（17 项：模版组装/画像判定/优化器行为/技能清单）
+npm test    # node --test test/unit.test.mjs（18 项：模版组装/画像判定/优化器行为/技能清单）
 ```
 
 ## 设计溯源
@@ -108,3 +109,4 @@ npm test    # node --test test/unit.test.mjs（17 项：模版组装/画像判�
 - 提示词模版：draft-blog 知识库（02-模板、07-知识库/可复用框架、提问模式综合分析的六大反模式）
 - 研究/着陆页：deerflow（bytedance/deer-flow）1.x 结构化计划与 2.x 技能方法论的研究结论
 - 插件骨架：DSH 官方扩展点文档与 dsh-model-failover 的防御式实践
+- 技能编写范式：本机三样本逆向（~/.dsh/skills/ui-ux-pro-max、~/.agents/skills/copilotkit-agui、~/.dsh/skills/ux-audit）＋Anthropic Agent Skills 开放标准

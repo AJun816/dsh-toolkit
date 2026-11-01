@@ -2,6 +2,9 @@
 
 服务端编写与评审的最佳实践。覆盖 API 设计、数据建模、可靠性、可观测性。
 
+> 基线失败：外部调用不带超时/重试/熔断，金额用浮点，迁移直接改列，排障靠 grep 日志。
+> 不启用：架构级选型与限界上下文划分（system-architect）；第三方接入完备性审计（integration-auditor）。
+
 ## 何时介入
 
 编写或评审服务端代码、设计 API 与数据层、处理并发/事务/故障场景、容量与成本规划。
@@ -45,7 +48,7 @@
 二、数据库基线：PostgreSQL 18 为当前主版本（postgresql.org）；SQLite/libsql 在边缘与嵌入场景的复兴是官方认可的路线。
 三、可观测性基线：OpenTelemetry 规范 1.x 已 Stable（opentelemetry.io/status）——traces/metrics/logs 三信号默认走 OTel 语义约定，结构化 JSON 日志为事实标准。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [OpenAPI Specification v3.2](https://swagger.io/specification/)（官方，2026-11-01 联网核验）
 - [PostgreSQL Release Notes](https://www.postgresql.org/docs/release/)（官方，2026-11-01 联网核验）
 - [OpenTelemetry Status](https://opentelemetry.io/status/)（官方，2026-11-01 联网核验）

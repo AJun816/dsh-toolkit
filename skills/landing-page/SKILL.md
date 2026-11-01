@@ -2,6 +2,9 @@
 
 营销/展示页面的生成流程。借鉴 deerflow frontend-design 与 ppt-generation 技能的三个关键设计：先研究后生成、风格字典前置、反 AI-slop 清单。
 
+> 基线失败：跳过研究基于通用知识直接生成，AI-slop 模板批量出现，事实靠编、首屏无 CTA。
+> 不启用：应用内功能页与仪表盘（ui-designer＋frontend-engineer）；多页工程化站点（project-init）。
+
 ## 何时介入
 
 生成 landing page、活动页、产品介绍页、个人主页等以「传达与转化」为目的的单页。
@@ -46,6 +49,6 @@ index.html（＋资源如用户要求分离）＋ 一段风格说明（方向/to
 二、性能即转化：Core Web Vitals 官方阈值（LCP ≤ 2.5s / INP ≤ 200ms / CLS ≤ 0.1）是硬门禁；经典量化研究 Deloitte《Milliseconds Make Millions》（2020）：交互延迟每降 0.1s，零售转化约 +8%（引用时注明为 2020 年研究，条件适用性自行评估）。
 三、移动优先不是选项：移动流量占主导的结论在 Google 多年研究中稳定成立——375px 断点即主战场。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [Baymard: Cart Abandonment Rate Statistics](https://baymard.com/lists/cart-abandonment-rate)（权威研究机构，2026-11-01 联网核验）
 - [web.dev Core Web Vitals](https://web.dev/articles/vitals)（Google 官方，2026-11-01 联网核验）

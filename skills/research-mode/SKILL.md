@@ -2,6 +2,9 @@
 
 四阶段结构化研究流水线。方法论借鉴 deerflow 两代研究架构之长：1.x 的结构化计划与回填（强结构）＋ 2.x 的技能方法论与并行子代理（强自主）。
 
+> 基线失败：带着模糊问题开跑，计划只存在自然语言里，URL 凭记忆生成，单一来源撑结论。
+> 不启用：十秒可答的事实核对（直接 web_search）；工程实现类任务（对应工程技能）。
+
 ## 何时介入
 
 技术调研、竞品分析、选型研究、写研究报告——任何「结论需要证据支撑」的多源调查任务。
@@ -58,6 +61,6 @@ has_enough_context: false
 二、探索优先：动手写报告前先探索（Explore first, then plan）——与四阶段流程的 CLARIFY→PLAN 一致，官方与知识库方法论在此汇合。
 三、引用纪律沿用 deerflow 双保险（引用前置 + URL 只出自搜索结果），与 OpenAI/Gemini Deep Research 公开描述的规划-检索-综合循环同构。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)（官方，2026-11-01 联网核验）
 - [Anthropic: Building Effective Agents](https://www.anthropic.com/engineering/building-effective-agents)（官方，2026-11-01 联网核验）

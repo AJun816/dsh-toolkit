@@ -2,6 +2,9 @@
 
 界面视觉与体验设计。含设计语言构建、排版配色系统、反「AI 俗套」清单、着陆页视觉方向。
 
+> 基线失败：方向未确认就开始无方向微调，AI 俗套七连批量出现，token 无单一来源、深色模式靠反色。
+> 不启用：组件代码实现（frontend-engineer）；整页营销页生成（landing-page）。
+
 ## 何时介入
 
 UI 设计、视觉走查、设计系统、或用户要求「好看/高级感/有设计感」时。
@@ -45,6 +48,6 @@ UI 设计、视觉走查、设计系统、或用户要求「好看/高级感/有
 二、设计令牌：Design Tokens Format 为 W3C 社区组规范（DTCG）——token 文件按「核心令牌（色阶/间距）→ 语义令牌（surface/danger）」两层组织，与主流系统（Material 3、Fluent）的 token 结构对齐。
 三、平台参照：Material 3（m3.material.io）与 Apple HIG 是双端权威参照；做跨端产品时以目标平台 HIG 为准，不混用。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [WCAG 2.2 W3C Recommendation](https://www.w3.org/TR/WCAG22/)（W3C 官方，2026-11-01 联网核验）
 - [Material Design 3](https://m3.material.io/)（Google 官方，2026-11-01 联网核验）

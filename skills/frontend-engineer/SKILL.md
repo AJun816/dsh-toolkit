@@ -2,6 +2,9 @@
 
 前端编写与评审的最佳实践。覆盖组件设计、状态管理、性能、可访问性、工程化。
 
+> 基线失败：盲目 memo 与全家桶状态库救性能、props 钻透三层、await 无三态处理、性能红线不进 CI。
+> 不启用：视觉方向与设计 token 决策（ui-designer）；营销单页生成（landing-page）；从零立法新仓库（project-init）。
+
 ## 何时介入
 
 编写或评审 React/Vue/Svelte/TS 前端代码、前端架构决策、页面性能优化、组件库设计。
@@ -45,7 +48,7 @@
 二、Core Web Vitals 官方阈值（web.dev）：LCP ≤ 2.5s、INP ≤ 200ms（官方原文 "Good INP values are 200 milliseconds"，INP 已取代 FID）、CLS ≤ 0.1；目标线应写进性能预算与 CI 门禁（Lighthouse 断言）。
 三、E2E 选择器哲学（Playwright 官方）：面向用户可感知的定位（getByRole/getByText）优先，禁依赖实现细节的 CSS/XPath 选择器；web-first 断言（expect(locator).toBeVisible 自动重试）代替 sleep。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [web.dev Core Web Vitals](https://web.dev/articles/vitals)、[INP](https://web.dev/articles/inp)（Google 官方，2026-11-01 联网核验）
 - [react.dev/blog](https://react.dev/blog)、[vite.dev](https://vite.dev/guide/)（官方，2026-11-01 联网核验）
 - [Playwright Best Practices](https://playwright.dev/docs/best-practices)（官方，2026-11-01 联网核验）

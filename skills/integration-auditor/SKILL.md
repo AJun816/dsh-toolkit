@@ -2,6 +2,9 @@
 
 外部系统接入与能力覆盖审计、长期文档演进。源自 draft-blog 外部集成审计与文档演进提示词 v1（AFF 集体盲区事故的立法产物）。
 
+> 基线失败：以二手文档或上次会话记忆为对拍基准，覆盖结论无分母（「基本完整」），长文档重写静默丢光旧版关键信息。
+> 不启用：单仓库内部代码质量（backend-engineer）；纯架构选型（system-architect）；十秒可答的事实核对（直接联网查）。
+
 ## 何时介入
 
 首次接入外部系统（MCP/API/SaaS）；对集成做审计或总结；迭代长文档（≥3 版或 ≥500 字主文档）。
@@ -34,6 +37,6 @@ Step 5 保全 diff：旧版关键信息清单 → 新版逐项核对（保留/�
 一、MCP 是外部能力接入的主战场：规范最新修订 2025-11-25（modelcontextprotocol.io/specification）——审计 MCP 集成时以 live tools/list 对拍规范修订号与 schema，二手文档（含模型记忆）一律不作为基准。
 二、API 契约审计基线：OpenAPI 3.2（swagger.io）——三源对拍时 live 探针拉 openapi.json，与其声明的 OpenAPI 版本与 schema 逐项核对。
 
-## 来源
+## 来源（保鲜 SLA 90 天：超期数字先重验再引用）
 - [MCP Specification](https://modelcontextprotocol.io/specification/latest)（官方开放标准，2026-11-01 联网核验）
 - [OpenAPI v3.2](https://swagger.io/specification/)（官方，2026-11-01 联网核验）
